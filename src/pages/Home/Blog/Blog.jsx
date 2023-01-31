@@ -1,4 +1,4 @@
-const Blog = ({article}) => {
+const Blog = ({article, setId}) => {
   const { _id, title, details, cover, tags, author, publishDate } = article;
 
   return (
