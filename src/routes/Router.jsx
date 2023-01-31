@@ -10,6 +10,7 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+        loader: () => fetch("https://sk-blog-server.vercel.app/blogs")
       }
     ]
   }
