@@ -1,11 +1,11 @@
-const Blog = ({article, setId}) => {
-  const { _id, title, details, cover, tags, author, publishDate } = article;
+const Blog = ({blog, setId}) => {
+  const { _id, title, details, cover, tags, author, publishDate } = blog;
 
   return (
-    <div className="card bg-base-100 shadow-xl rounded-md">
+    <div className="card bg-gray-800 shadow-xl rounded-md">
       <figure>
         <label onClick={() => setId(_id)} htmlFor='blogDetailsModal' className='w-full'>
-          <img className='hover:scale-105 hover:brightness-75 transition-all duration-300 w-full' src={cover} alt="Blog" />
+          <img className='hover:scale-105 hover:brightness-75 transition-all duration-300 w-full h-56 object-cover' src={cover} alt="Blog" />
         </label>
       </figure>
       <div className="card-body block p-4">
